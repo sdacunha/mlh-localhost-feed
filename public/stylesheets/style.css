@@ -1,0 +1,92 @@
+
+/*
+  Set the font for the app to Lato
+ */
+* {
+  font-family: 'Lato', sans-serif !important;
+}
+
+/*
+ Add a background colour
+ */
+body {
+  background-color: #273478;
+}
+
+/*
+  Apply colour to anchor (link) tags
+*/
+a {
+  color: #00B7FF;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+/**
+  Add some padding to the top and bottom of the app
+ */
+.wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/**
+  Style for last div that signals the end of the timeline
+ */
+.end-tweets {
+  background: white;
+  width: 200px;
+  text-align: center;
+  border-radius: 60px;
+  padding: 20px;
+  margin: 80px auto 0;
+  animation-name: fadeIn;
+  animation-duration: 12s;
+}
+
+/**
+  Set width and padding of each tweet container
+ */
+.tweet {
+  width: 500px;
+  margin: 0 auto 30px;
+  animation-name: slideUp;
+  animation-duration: 1s;
+}
+
+/*
+ The line drawn down the middle of the app
+ */
+.line {
+  position: fixed;
+  left: calc(50% - 2px);
+  height: 100%;
+  width: 4px;
+  background: #00B7FF;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+}
+
+/**
+  Animation for sliding up tweets
+ */
+@keyframes slideUp {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/**
+  Animation for fading other elements in other than the tweets
+ */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

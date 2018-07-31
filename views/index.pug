@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    // ^ Define content block to be rendered in layout
+    // The line to be drawn down the center
+    .line
+    // This a row, with two columns on each side to fill the space and center a column (col-6) inside
+    .row.wrap
+      .col-3
+      .col-6
+        // For each tweet, create a div. We then use Twitters widget library to load the tweet. See layout.pug's
+        each val in tweets_ids
+          div(class='tweet' id=val)
+        .end-tweets='Thats it for now!'
+      .col-3
+

@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title= title
+    // Lato font
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+    // Bootstrap styles
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css', integrity='sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO', crossorigin='anonymous')
+    // Base styles - added after so we can override bootstraps defaults
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    // Libraries: jQuery, Popper (for bootstrap), Bootstrap, Twitter Widget Javascript Library
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js', integrity='sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy', crossorigin='anonymous')
+    script(src='https://platform.twitter.com/widgets.js')
+    // When a div.tweet element is created, use the Twitter widget api to render the tweet.
+    script.
+      $(document).ready(function() {
+        // Attach to tweet divs
+        var tweets = $(".tweet");
+        // Load each one using Twitter widget lib
+        $(tweets).each(function (t, tweet) {
+          var id = $(this).attr('id');
+          twttr.widgets.createTweet(id, tweet);
+        });
+      })
+  body
+    // Render the bootstrap navbar with the brand
+    nav.navbar.navbar-expand-lg.fixed-top
+      .container
+        a.navbar-brand(href='#')
+         b='MLH '
+         span='Localhost Feed'
+    // Wrap the contents in a container div
+    .container
+       // Render the content here (for example: index.pug)
+       block content
+
