@@ -1,5 +1,9 @@
 # MLH Localhost Feed by Shadwell Da Cunha
 
+Note: The [deployed application](https://mlh-localhost-feed.herokuapp.com) uses my app credentials, and is limited
+to 250 requests per month, after which it will no longer work. If you notice an issue, please [email me](emailto:contact@sdacunha.com).
+
+
 Stack:
 - NodeJS (Express + Pug templating)
 
@@ -19,9 +23,6 @@ sample app used to teach, fragmenting the app only added complexity that could c
 Since most of the MLH samples are built with Python or Javascript, I decided to use NodeJS, since it is popular 
 (especially in the hackathon community, I myself created a backend at a hackathon in NodeJS, just since the setup is 
 very easy and painless). I tried to keep the code as simple, descriptive and readable as possible.
-
-Note: The deployed application at: https://mlh-localhost-feed.herokuapp.com/ is using my app credentials, and is limited
-to 250 requests per month, after which it will no longer work. If you notice an issue, please [email me](emailto:contact@sdacunha.com).
 
 # Setting up
 To get going quickly, simply set the env var:
