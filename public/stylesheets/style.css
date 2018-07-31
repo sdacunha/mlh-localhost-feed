@@ -82,6 +82,13 @@ a {
 }
 
 /**
+ Fix some weird margin added by Twitters widget iframe
+ */
+.twitter-tweet {
+  margin: 0 auto !important;
+}
+
+/**
   Animation for sliding up tweets
  */
 @keyframes slideUp {
