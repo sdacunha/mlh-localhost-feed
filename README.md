@@ -1,5 +1,4 @@
 # MLH Localhost Feed by Shadwell Da Cunha
-Demo application for MLH Localhost Twitter Feed
 
 Stack:
 - NodeJS (Express + Pug templating)
@@ -26,7 +25,12 @@ to 250 requests per month, after which it will no longer work. If you notice an 
 
 # Setting up
 To get going quickly, simply set the env var:
+
 ``export MLH_TEST=true``
+
+Then use:
+``npm start`` or ``yarn start``
+
 This will use test tweet IDs, fetched on and up till July 30th.
 
 However, if you would like to run and get real date, you will need to set the following env variables:
@@ -34,6 +38,16 @@ However, if you would like to run and get real date, you will need to set the fo
 - TWITTER_SEARCH_ENDPOINT: 30day or fullarchive. Note these have very different limits (250 vs 50 respectively in the sandbox plan)
 - TWITTER_CONSUMER_KEY: Your application consumer key
 - TWITTER_CONSUMER_SECRET: Your application consumer secret
+
+Example:
+
+``export TWITTER_ENV=localhost``
+
+``export TWITTER_SEARCH_ENDPOINT=30day``
+
+``export TWITTER_CONSUMER_KEY=wPUfH9xxxxxxxxxxxpa2BmtMx``
+
+``export TWITTER_CONSUMER_SECRET=5fWfOyRy8sqxxxxxxxxxxxxxxxxxxxxxxi0fXdhHspJT822rE``
 
 To retrieve your application consumer key and secret, follow the steps to create a developer account and app here:
 https://developer.twitter.com/en/docs/basics/developer-portal/guides/apps.html
