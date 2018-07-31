@@ -19,9 +19,8 @@ Stack:
 
 # Stack decision process
 Usually, I would use React and any backend framework from Rails, NodeJS, and Spring. However, in the context of a 
-sample app used to teach, fragmenting the app only added complexity that could confused many beginners. 
-Since most of the MLH samples are built with Python or Javascript, I decided to use NodeJS, since it is popular 
-(especially in the hackathon community, I myself created a backend at a hackathon in NodeJS, just since the setup is 
+sample app used to teach, fragmenting the app only added complexity that could confuse many beginners. 
+Since most of the MLH samples are built with Python or Javascript, I decided to use NodeJS, since it is a popular javascript framework (especially in the hackathon community, I myself created a backend at a hackathon in NodeJS, just since the setup is 
 very easy and painless). I tried to keep the code as simple, descriptive and readable as possible.
 
 # Setting up
