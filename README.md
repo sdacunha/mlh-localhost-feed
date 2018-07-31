@@ -33,7 +33,7 @@ Then use:
 
 This will use test tweet IDs, fetched on and up till July 30th.
 
-However, if you would like to run and get real date, you will need to set the following env variables:
+However, if you would like to run and get real data, you will need to set the following env variables:
 - TWITTER_ENV: the name of the sandbox environment you will use
 - TWITTER_SEARCH_ENDPOINT: 30day or fullarchive. Note these have very different limits (250 vs 50 respectively in the sandbox plan)
 - TWITTER_CONSUMER_KEY: Your application consumer key
