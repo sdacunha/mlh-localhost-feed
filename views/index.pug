@@ -6,11 +6,11 @@ block content
     .line
     // This a row, with two columns on each side to fill the space and center a column (col-6) inside
     .row.wrap
-      .col-3
-      .col-6
+      .col-md-3.col-12
+      .col-md-6.col-12
         // For each tweet, create a div. We then use Twitters widget library to load the tweet. See layout.pug's
         each val in tweets_ids
           div(class='tweet' id=val)
         .end-tweets='Thats it for now!'
-      .col-3
+      .col-md-3.col-12
 

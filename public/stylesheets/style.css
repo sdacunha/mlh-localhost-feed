@@ -40,15 +40,14 @@ a {
   border-radius: 60px;
   padding: 20px;
   margin: 80px auto 0;
-  animation-name: fadeIn;
-  animation-duration: 12s;
 }
 
 /**
   Set width and padding of each tweet container
  */
 .tweet {
-  width: 500px;
+  width: 100%;
+  min-height: 100px;
   margin: 0 auto 30px;
   animation-name: slideUp;
   animation-duration: 1s;
@@ -65,6 +64,21 @@ a {
   background: #00B7FF;
   animation-name: fadeIn;
   animation-duration: 3s;
+}
+
+/**
+  Hide the line on smaller devices, and extend the size of the .end-tweets div, and add a background to the nav
+ */
+@media (max-width: 768px) {
+  .line {
+    visibility: hidden;
+  }
+  .end-tweets {
+    width: 100%;
+  }
+  .navbar {
+    background: rgba(39, 52, 120, 0.90);
+  }
 }
 
 /**
